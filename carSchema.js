@@ -18,20 +18,20 @@ module.exports=carModel;
 
 //first things first create one user
 
-// userModel.create({
-//   name:'harsh',
-//   age:'20',
-//   books:[]
-// }).then(function(userCreated){
-//   console.log(userCreated);
-// })
+userModel.create({
+  name:'harsh',
+  age:'20',
+  books:[]
+}).then(function(userCreated){
+  console.log(userCreated);
+})
 
 
-//populate
-// userModel.findOne({_id: '5fe362951193572f84f391a9'})
-// .populate('books').exec(function(err,data){
-//   console.log(data);
-// });
+populate
+userModel.findOne({_id: '5fe362951193572f84f391a9'})
+.populate('books').exec(function(err,data){
+  console.log(data);
+});
 
 //reference 
 // userModel.findOne({_id:'5fe362951193572f84f391a9'})
