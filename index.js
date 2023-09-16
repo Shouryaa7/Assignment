@@ -9,7 +9,7 @@ const { populate } = require('./users');
 
 passport.use(new localStrategy(userModel.authenticate()));
 
-/* GET home page. */
+// /* GET home page. */
 router.get('/',redirectToProfile,function(req,res) {
   res.render('index',{isLoggedInval: false});
 });
